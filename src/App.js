@@ -16,7 +16,7 @@ function App() {
       <section className="scoreboard">
         <div className="topRow">
           <div className="home">
-            <h2 className="home__name">Lions</h2>
+            <h2 className="home__name">Seahawks</h2>
 
             {/* TODO STEP 3 - We need to change the hardcoded values in these divs to accept dynamic values from our state. */}
 
@@ -26,8 +26,9 @@ function App() {
           <div className="away">
             <h2 className="away__name">Tigers</h2>
             <div className="away__score">{countTigers}</div>
-            <h2 className="home_scoreBoard">Quarter</h2>
-            <div className="home__scoreBoard">{countTigers}</div>
+            
+            
+            
           </div>
         </div>
         <BottomRow />
@@ -41,7 +42,7 @@ function App() {
         <div className="awayButtons">
           <button className="awayButtons__touchdown" onClick={() => setCountTigers(countTigers + 7)}>Away Touchdown</button>
           <button className="awayButtons__fieldGoal" onClick={() => setCountTigers(countTigers + 3)}>Away Field Goal</button>
-          <button className="homeButtons_quarter" onClick={() => setQuarter(countQuarter + 0)}>Quarter</button>
+          <button className="Buttons_quarter" onClick={() => setQuarter(countQuarter + 1)}>Quarter</button>
         </div>
       </section>
     </div>
