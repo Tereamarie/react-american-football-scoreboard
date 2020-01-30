@@ -52,7 +52,7 @@ return (
  
  
  
-{/* TODO STEP 3 - We need to change the hardcoded values in these divs to accept dynamic values from our state. */}
+{/* TODO STEP 3 - We need to change the hard coded values in these div's to accept dynamic values from our state. */}
  
  
  
