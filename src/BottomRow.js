@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import "./App.css";
 
 const BottomRow = () => {
-  const [quarterValue, newQuarterValue] = useState(1);
+  const [quarterValue, newQuarterValue] = useState(0);
   return (
     <div className="bottomRow">
       <div className="down">
@@ -21,11 +21,11 @@ const BottomRow = () => {
       <div className="quarter">
         <h3 className="quarter__title">Quarter</h3>
         <div className="quarter__value">{quarterValue}</div>
-        <div className="quarterButton">
-          {/*BottomRow*/}
-          <button onClick={() => newQuarterValue(quarterValue + 1)} className="quarterButton__change">New Quarter</button>
-      </div>
 
+        <div className="quarterButton">
+         {/*BottomRow*/}
+         <button onClick={() => newQuarterValue(quarterValue + 1)} className="quarterButton__change">New Quarter</button>
+      </div>
       </div>
     </div>
   );
