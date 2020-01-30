@@ -8,8 +8,9 @@ function App() {
 
   const [countLions, setCountLions] = useState(0);
   const [countTigers, setCountTigers] = useState(0);
-  // const [quarter, setQuarter] = useState(0);
-
+  const [countQuarter, setQuarter] = useState(0);
+  
+  
   return (
     <div className="container">
       <section className="scoreboard">
@@ -25,6 +26,8 @@ function App() {
           <div className="away">
             <h2 className="away__name">Tigers</h2>
             <div className="away__score">{countTigers}</div>
+            <h2 className="home_scoreBoard">Quarter</h2>
+            <div className="home__scoreBoard">{countTigers}</div>
           </div>
         </div>
         <BottomRow />
@@ -38,11 +41,11 @@ function App() {
         <div className="awayButtons">
           <button className="awayButtons__touchdown" onClick={() => setCountTigers(countTigers + 7)}>Away Touchdown</button>
           <button className="awayButtons__fieldGoal" onClick={() => setCountTigers(countTigers + 3)}>Away Field Goal</button>
-          {/*<button onClick={() => setQuarter(quarter )}>Qaurter</button>*/}
+          <button className="homeButtons_quarter" onClick={() => setQuarter(countQuarter + 0)}>Quarter</button>
         </div>
       </section>
     </div>
   );
 }
 
-export default App;
+export default App;                                              
