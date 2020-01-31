@@ -24,7 +24,7 @@ const BottomRow = () => {
 
         <div className="quarterButton">
          {/*BottomRow*/}
-         <button onClick={() => newQuarterValue(quarterValue + 1)} className="quarterButton__change">New Quarter</button>
+         <button onClick={() => newQuarterValue(quarterValue + 1)} className="quarterButton__change">Quarter</button>
       </div>
       </div>
     </div>
